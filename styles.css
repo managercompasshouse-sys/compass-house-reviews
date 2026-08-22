@@ -1,0 +1,452 @@
+/* =========================================
+   COMPASS HOUSE — NFC REVIEW PAGE
+   Elegant • Warm • Chic • Minimal
+   ========================================= */
+
+:root {
+    --cream: #f5f3ec;
+    --warm-white: #fffefa;
+    --charcoal: #171714;
+    --soft-grey: #6f7167;
+
+    --olive: #59634a;
+    --olive-dark: #414a36;
+
+    --sage: #dfe3d5;
+    --sand: #e8e2d5;
+
+    --terracotta: #ead8ce;
+
+    --border: #dcdcd1;
+}
+
+
+/* =========================================
+   BASIC RESET
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: var(--cream);
+    color: var(--charcoal);
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   MAIN PAGE
+   ========================================= */
+
+.page {
+    width: 100%;
+    max-width: 520px;
+
+    margin: 0 auto;
+
+    padding: 28px 20px 45px;
+}
+
+
+/* =========================================
+   LOGO / HEADER
+   ========================================= */
+
+.logo {
+    text-align: center;
+    margin: 15px 0 30px;
+}
+
+.logo h1 {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    font-weight: normal;
+
+    letter-spacing: 2px;
+}
+
+.logo p {
+    margin: 6px 0 0;
+
+    color: var(--soft-grey);
+
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   HERO IMAGE
+   ========================================= */
+
+.hero-image {
+    width: 100%;
+    height: 250px;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    margin-bottom: 32px;
+
+    box-shadow: 0 8px 25px rgba(40, 40, 30, 0.08);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   INTRODUCTION
+   ========================================= */
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro h2 {
+    margin: 0 0 12px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.intro p {
+    margin: 0 auto;
+
+    max-width: 430px;
+
+    color: var(--soft-grey);
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   REVIEW CARDS
+   ========================================= */
+
+.review-card {
+    width: 100%;
+
+    padding: 26px 22px;
+
+    margin: 0 0 18px 0;
+
+    border-radius: 20px;
+
+    border: 1px solid transparent;
+
+    text-align: center;
+
+    box-shadow: 0 6px 20px rgba(60, 55, 40, 0.06);
+}
+
+
+/* Booking.com — soft sage */
+
+.booking-card {
+    background: #e1e6d9;
+    border-color: #d2d9c8;
+}
+
+
+/* Hostelworld — warm cream */
+
+.hostelworld-card {
+    background: #f1ece2;
+    border-color: #e2d9ca;
+}
+
+
+/* Google — soft terracotta */
+
+.google-card {
+    background: #ead8ce;
+    border-color: #dfc8bb;
+}
+
+
+/* =========================================
+   REVIEW CARD TEXT
+   ========================================= */
+
+.review-card h3 {
+    margin: 0 0 8px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 22px;
+    font-weight: normal;
+
+    color: var(--charcoal);
+}
+
+.review-card p {
+    margin: 0 0 18px;
+
+    color: #5f6259;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   REVIEW BUTTONS
+   ========================================= */
+
+.review-button {
+    display: inline-block;
+
+    width: auto;
+
+    padding: 14px 26px;
+
+    background: var(--olive);
+
+    color: #fffdf5;
+
+    border: 1px solid var(--olive);
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 15px;
+
+    font-weight: normal;
+
+    letter-spacing: 0.5px;
+
+    box-shadow: 0 4px 12px rgba(40, 45, 30, 0.12);
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Button hover */
+
+.review-button:hover {
+    background: var(--olive-dark);
+
+    color: #ffffff;
+
+    border-color: var(--olive-dark);
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 7px 18px rgba(40, 45, 30, 0.18);
+}
+
+
+/* =========================================
+   GOOGLE BUTTON
+   ========================================= */
+
+.google-button {
+    background: var(--charcoal);
+
+    color: #fffdf5;
+
+    border-color: var(--charcoal);
+}
+
+.google-button:hover {
+    background: var(--olive);
+
+    color: #fffdf5;
+
+    border-color: var(--olive);
+}
+
+
+/* =========================================
+   OR DIVIDER
+   ========================================= */
+
+.divider {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    width: 100%;
+
+    margin: 26px 0;
+
+    color: var(--olive);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 15px;
+
+    font-style: italic;
+
+    text-align: center;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: var(--border);
+}
+
+
+/* =========================================
+   PRIVATE FEEDBACK
+   ========================================= */
+
+.feedback {
+    background: var(--sage);
+
+    border-radius: 20px;
+
+    padding: 25px 20px;
+
+    text-align: center;
+
+    margin-top: 10px;
+}
+
+.feedback h3 {
+    margin: 0 0 8px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 22px;
+
+    font-weight: normal;
+}
+
+.feedback p {
+    margin: 0 0 17px;
+
+    color: var(--soft-grey);
+
+    font-size: 14px;
+}
+
+.feedback-button {
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    border: 1px solid var(--charcoal);
+
+    border-radius: 50px;
+
+    color: var(--charcoal);
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.feedback-button:hover {
+    background: var(--charcoal);
+
+    color: white;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.footer {
+    text-align: center;
+
+    margin-top: 35px;
+
+    color: var(--soft-grey);
+
+    font-size: 11px;
+}
+
+.footer p {
+    margin: 4px 0;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 380px) {
+
+    .page {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .logo h1 {
+        font-size: 32px;
+    }
+
+    .intro h2 {
+        font-size: 25px;
+    }
+
+    .hero-image {
+        height: 220px;
+    }
+
+    .review-card {
+        padding: 23px 17px;
+    }
+
+    .review-card h3 {
+        font-size: 20px;
+    }
+
+    .review-button {
+        width: 100%;
+
+        padding: 14px 18px;
+
+        font-size: 14px;
+    }
+}
